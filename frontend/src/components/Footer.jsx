@@ -193,10 +193,17 @@ const Footer = () => {
           className="flex flex-col md:flex-row justify-between items-center"
         >
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            <p>© 2025 Shravan Kumar. All rights reserved.</p>
+            <p>© 2025 Janagani Shravan Kumar. All rights reserved.</p>
           </div>
           <div className="text-gray-400 text-sm">
-            <p>Last updated: {formattedDate} IST</p>
+            <motion.p
+              key={formattedDate} // This will trigger re-render when time changes
+              initial={{ opacity: 0.8 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              Live: {formattedDate} IST
+            </motion.p>
           </div>
         </motion.div>
 
