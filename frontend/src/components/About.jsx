@@ -46,9 +46,10 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                Hi! I'm Shravan Kumar, an RPA Developer with 4.4 years of experience at Cognizant, 
-                specializing in Blue Prism and UiPath. I've designed over 20 automation solutions, 
-                reducing manual effort by 25% and automating processes like Excel and mainframe applications.
+                Hi! I'm Janagani Shravan Kumar, an RPA Developer with 4.5 years of experience, 
+                specializing in Blue Prism and UiPath. I've designed over 30 automation solutions, 
+                reducing manual effort by 25% and automating processes like Web APIs, Desktop, 
+                Web, Outlook, Excel and Mainframe applications.
               </motion.p>
               
               <motion.p 
@@ -58,9 +59,8 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
               >
-                Skilled in Python, Java, and process optimization, I'm passionate about delivering 
-                efficient business solutions. Certified in AD01 Blue Prism and ADAV1 UiPath, 
-                I thrive in collaborative environments. Let's connect to explore automation opportunities!
+                I'm passionate about delivering efficient business solutions. Certified in AD01 Blue Prism 
+                and ADAV1 UiPath, I thrive in collaborative environments. Let's connect to explore automation opportunities!
               </motion.p>
 
               <motion.div 
