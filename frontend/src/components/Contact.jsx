@@ -50,7 +50,21 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleContactClick = (info) => {
+    if (info.isDownload) {
+      // In frontend mode, show message about resume upload
+      alert('Resume download will be available once uploaded through the admin panel (click the settings icon at bottom left)');
+      return;
+    }
+    
+    if (info.link && info.link !== '#') {
+      if (info.link.startsWith('mailto:')) {
+        window.location.href = info.link;
+      } else {
+        window.open(info.link, '_blank', 'noopener,noreferrer');
+      }
+    }
+  };
     e.preventDefault();
     setIsSubmitting(true);
     
