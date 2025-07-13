@@ -1,34 +1,117 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+::-webkit-scrollbar-thumb {
+    background: #00D1FF;
+    border-radius: 4px;
 }
 
-.App-link {
-    color: #61dafb;
+::-webkit-scrollbar-thumb:hover {
+    background: #00A3CC;
 }
 
-@keyframes App-logo-spin {
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom selection */
+::selection {
+    background: #00D1FF;
+    color: #000000;
+}
+
+/* Remove default focus outline and add custom */
+* {
+    outline: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #00D1FF;
+    outline-offset: 2px;
+}
+
+/* Ensure black background for the entire app */
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+/* Gradient text utility */
+.gradient-text {
+    background: linear-gradient(135deg, #00D1FF, #00A3CC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 209, 255, 0.1);
+}
+
+/* Neon glow effect */
+.neon-glow {
+    box-shadow: 0 0 20px rgba(0, 209, 255, 0.3);
+}
+
+.neon-glow:hover {
+    box-shadow: 0 0 40px rgba(0, 209, 255, 0.5);
+}
+
+/* Loading spinner */
+@keyframes spin {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Pulse animation for interactive elements */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
 }
