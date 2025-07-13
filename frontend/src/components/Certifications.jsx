@@ -9,15 +9,17 @@ const Certifications = () => {
       date: '2023',
       description: 'Professional certification in Blue Prism development and automation design',
       icon: '🏆',
-      verified: true
+      verified: true,
+      credentialUrl: 'https://www.credly.com/badges/c4c1d2df-a77e-473a-a593-fbb1383e7cd4/public_url'
     },
     {
       title: 'ADAV1 UiPath Certified Professional Automation Developer Associate',
       issuer: 'UiPath',
-      date: '2022',
+      date: '2024',
       description: 'Advanced certification in UiPath automation development and best practices',
       icon: '🎖️',
-      verified: true
+      verified: true,
+      credentialUrl: 'https://www.credential.net/c20616da-31a7-43f5-8eb8-0f8ca0c23efb#acc.vtdOApUS'
     },
     {
       title: 'Certificate of Appreciation',
@@ -25,9 +27,16 @@ const Certifications = () => {
       date: '2024',
       description: 'Recognition for outstanding performance and innovative automation solutions',
       icon: '⭐',
-      verified: true
+      verified: true,
+      credentialUrl: '#'
     }
   ];
+
+  const handleCertificationClick = (cert) => {
+    if (cert.credentialUrl && cert.credentialUrl !== '#') {
+      window.open(cert.credentialUrl, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
     <div className="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
@@ -58,9 +67,12 @@ const Certifications = () => {
                 rotateY: 5,
                 transition: { duration: 0.3 }
               }}
-              className="relative group"
+              onClick={() => handleCertificationClick(cert)}
+              className={`relative group ${cert.credentialUrl !== '#' ? 'cursor-pointer' : ''}`}
             >
-              <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/40 backdrop-blur-sm rounded-2xl p-8 border border-[#00D1FF]/20 hover:border-[#00D1FF]/40 transition-all duration-300 h-full">
+              <div className={`bg-gradient-to-br from-gray-800/60 to-gray-900/40 backdrop-blur-sm rounded-2xl p-8 border border-[#00D1FF]/20 hover:border-[#00D1FF]/40 transition-all duration-300 h-full ${
+                cert.credentialUrl !== '#' ? 'hover:shadow-lg hover:shadow-[#00D1FF]/20' : ''
+              }`}>
                 {/* Verified Badge */}
                 {cert.verified && (
                   <motion.div 
@@ -72,6 +84,18 @@ const Certifications = () => {
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </motion.div>
+                )}
+
+                {/* Click indicator for clickable certs */}
+                {cert.credentialUrl !== '#' && (
+                  <motion.div 
+                    className="absolute top-3 left-3 text-[#00D1FF] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </motion.div>
                 )}
@@ -100,6 +124,14 @@ const Certifications = () => {
                   <p className="text-gray-300 text-sm leading-relaxed">
                     {cert.description}
                   </p>
+
+                  {cert.credentialUrl !== '#' && (
+                    <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-[#00D1FF] text-sm font-medium">
+                        Click to view credential →
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Hover effect overlay */}
