@@ -74,7 +74,7 @@ const About = () => {
                   <span className="text-[#00D1FF] font-medium">4.5+ Years Experience</span>
                 </div>
                 <div className="bg-[#00D1FF]/10 border border-[#00D1FF]/30 rounded-full px-4 py-2">
-                  <span className="text-[#00D1FF] font-medium">20+ Automation Solutions</span>
+                  <span className="text-[#00D1FF] font-medium">30+ Automation Solutions</span>
                 </div>
                 <div className="bg-[#00D1FF]/10 border border-[#00D1FF]/30 rounded-full px-4 py-2">
                   <span className="text-[#00D1FF] font-medium">25% Efficiency Gain</span>
