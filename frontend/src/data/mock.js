@@ -3,14 +3,15 @@
 
 export const portfolioData = {
   personal: {
-    name: "Shravan Kumar",
+    name: "Janagani Shravan Kumar",
     title: "RPA Developer",
     subtitle: "Blue Prism Specialist",
     experience: "4.5 years",
-    bio: "Hi! I'm Shravan Kumar, an RPA Developer with 4.4 years of experience at Cognizant, specializing in Blue Prism and UiPath. I've designed over 20 automation solutions, reducing manual effort by 25% and automating processes like Excel and mainframe applications. Skilled in Python, Java, and process optimization, I'm passionate about delivering efficient business solutions. Certified in AD01 Blue Prism and ADAV1 UiPath, I thrive in collaborative environments. Let's connect to explore automation opportunities!",
+    bio: "Hi! I'm Janagani Shravan Kumar, an RPA Developer with 4.5 years of experience, specializing in Blue Prism and UiPath. I've designed over 30 automation solutions, reducing manual effort by 25% and automating processes like Web APIs, Desktop, Web, Outlook, Excel and Mainframe applications. I'm passionate about delivering efficient business solutions. Certified in AD01 Blue Prism and ADAV1 UiPath, I thrive in collaborative environments. Let's connect to explore automation opportunities!",
     location: "India",
     availability: "Available for opportunities",
-    profileImage: null // Will be added later
+    profileImage: null, // Will be added later
+    resumeUrl: null // Will be added when resume is uploaded
   },
 
   contact: {
