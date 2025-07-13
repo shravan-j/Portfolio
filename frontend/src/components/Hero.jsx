@@ -44,8 +44,8 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Shravan
-            <span className="block text-[#00D1FF] font-light">Kumar</span>
+            Janagani
+            <span className="block text-[#00D1FF] font-light">Shravan Kumar</span>
           </motion.h1>
           
           <motion.p 
