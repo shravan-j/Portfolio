@@ -85,7 +85,7 @@ const Footer = () => {
               className="text-2xl font-bold text-[#00D1FF] mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              Shravan Kumar
+              Janagani Shravan Kumar
             </motion.h3>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               RPA Developer specializing in Blue Prism and UiPath with 4.5 years of experience. 
