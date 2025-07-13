@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
-  const currentDate = new Date();
-  const formattedDate = currentDate.toLocaleString('en-IN', {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  // Update time every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formattedDate = currentTime.toLocaleString('en-IN', {
     hour: '2-digit',
     minute: '2-digit',
     hour12: true,
