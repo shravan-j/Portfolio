@@ -247,26 +247,29 @@ export const portfolioData = {
       id: 1,
       company: 'Cognizant',
       position: 'RPA Developer',
-      duration: '4.4 years',
-      startDate: '2020',
+      duration: '4.5 years',
+      startDate: 'March 2021',
       endDate: 'Present',
       location: 'India',
       type: 'Full-time',
+      current: true,
+      logo: null, // Can be uploaded later
       achievements: [
-        'Designed over 20 automation solutions',
+        'Designed over 30 automation solutions',
         'Reduced manual effort by 25%',
         'Specialized in Blue Prism and UiPath development',
-        'Automated Excel and mainframe applications'
-      ]
+        'Automated Web APIs, Desktop, Web, Outlook, Excel and Mainframe applications'
+      ],
+      description: 'Currently working as an RPA Developer specializing in Blue Prism and UiPath automation solutions. Leading automation projects and delivering innovative business process improvements.'
     }
   ],
 
   statistics: {
-    automationSolutions: 20,
+    automationSolutions: 30,
     manualEffortReduction: 25,
-    yearsExperience: 4.4,
+    yearsExperience: 4.5,
     certifications: 3,
-    projectsCompleted: 15,
+    projectsCompleted: 20,
     clientSatisfaction: 98
   },
 
