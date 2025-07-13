@@ -65,6 +65,8 @@ const Contact = () => {
       }
     }
   };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
