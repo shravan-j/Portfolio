@@ -215,18 +215,18 @@ export const portfolioData = {
       description: 'Professional certification in Blue Prism development and automation design',
       icon: '🏆',
       verified: true,
-      credentialUrl: '#',
+      credentialUrl: 'https://www.credly.com/badges/c4c1d2df-a77e-473a-a593-fbb1383e7cd4/public_url',
       level: 'Professional'
     },
     {
       id: 2,
       title: 'ADAV1 UiPath Certified Professional Automation Developer Associate',
       issuer: 'UiPath',
-      date: '2022',
+      date: '2024',
       description: 'Advanced certification in UiPath automation development and best practices',
       icon: '🎖️',
       verified: true,
-      credentialUrl: '#',
+      credentialUrl: 'https://www.credential.net/c20616da-31a7-43f5-8eb8-0f8ca0c23efb#acc.vtdOApUS',
       level: 'Associate'
     },
     {
