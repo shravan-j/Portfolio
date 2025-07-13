@@ -32,6 +32,14 @@ const Contact = () => {
       icon: '💻',
       link: '#',
       description: 'Check out my projects'
+    },
+    {
+      type: 'Download Resume',
+      value: 'Get my latest CV',
+      icon: '📄',
+      link: '#',
+      description: 'Download my resume (PDF)',
+      isDownload: true
     }
   ];
 
