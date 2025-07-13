@@ -25,26 +25,26 @@ export const portfolioData = {
   skills: [
     {
       id: 1,
-      name: 'RPA',
-      level: 95,
-      icon: '🤖',
-      description: 'Robotic Process Automation',
-      category: 'automation'
-    },
-    {
-      id: 2,
       name: 'Blue Prism',
-      level: 90,
+      level: 95,
       icon: '🔷',
       description: 'Blue Prism Development',
       category: 'automation'
     },
     {
-      id: 3,
+      id: 2,
       name: 'UiPath',
       level: 85,
       icon: '🎯',
       description: 'UiPath Automation',
+      category: 'automation'
+    },
+    {
+      id: 3,
+      name: 'Power Automate for Desktop',
+      level: 75,
+      icon: '⚡',
+      description: 'Microsoft Power Automate',
       category: 'automation'
     },
     {
@@ -57,14 +57,6 @@ export const portfolioData = {
     },
     {
       id: 5,
-      name: 'Java',
-      level: 75,
-      icon: '☕',
-      description: 'Java Development',
-      category: 'programming'
-    },
-    {
-      id: 6,
       name: 'MySQL',
       level: 70,
       icon: '🗄️',
@@ -72,10 +64,10 @@ export const portfolioData = {
       category: 'database'
     },
     {
-      id: 7,
+      id: 6,
       name: 'Process Optimization',
       level: 85,
-      icon: '⚡',
+      icon: '📈',
       description: 'Business Process Improvement',
       category: 'business'
     }
