@@ -32,7 +32,7 @@ const Navigation = ({ currentSection }) => {
             className="text-2xl font-bold text-[#00D1FF]"
             whileHover={{ scale: 1.05 }}
           >
-            Shravan Kumar
+            Janagani Shravan Kumar
           </motion.h1>
           
           <div className="hidden md:flex space-x-8">
